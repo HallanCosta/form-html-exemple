@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, rgb(197, 232, 183), rgb(46, 182, 44));
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  width: 20%;
+  color: white;
+  width: 400px;
+}
+
+main form fieldset {
+  border: 3px solid rgb(131, 212, 117);
+}
+
+main form fieldset legend {
+  border: 1px solid rgb(131, 212, 117);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(131, 212, 117);
+  border-radius: 5px;
+}
+
+main form fieldset .input-box {
+  position: relative;
+}
+
+main form fieldset .input-user {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+main form fieldset .input-user:focus ~ .label-input,
+main form fieldset .input-user:valid ~ .label-input
+{
+  top: -20px;
+  font-size: 12px;
+  color: dodgerblue;
+}
+
+main form fieldset .label-input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5px;
+}
+
+main form fieldset #birth-date {
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+main form fieldset #submit {
+  background-image: linear-gradient(to right, rgb(17, 165, 4), rgb(109, 211, 72));
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+main form fieldset #submit:hover {
+  background-image: linear-gradient(to right, rgb(10, 114, 1), rgb(67, 240, 4));
+}
